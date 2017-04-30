@@ -1,0 +1,18 @@
+<ion-view view-title="Login">
+    <ion-content>
+        <form>
+            <div class="list">
+                <label class="item item-input"> <span class="input-label">Username</span>
+                    <input type="text" ng-model="newuser.userid"> </label>
+                <label class="item item-input"> <span class="input-label">Password</span>
+                    <input type="password" ng-model="newuser.pw"> </label>
+                <button type="submit" class="button button-full button-positive" ng-click="validateuser(newuser)">Submit</button>
+            </div>
+        </form>
+        <ul>
+            <li ng-repeat="user in registeredusers">
+                {{user}} {{curUser}}
+            </li>
+        </ul>
+    </ion-content>
+</ion-view>
